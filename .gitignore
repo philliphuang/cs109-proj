@@ -6,3 +6,15 @@ data/FoodSupply_Crops_E_All_Data.csv
 data/FoodSupply_LivestockFish_E_All_Data_(Norm).csv
 
 data/FoodSupply_LivestockFish_E_All_Data.csv
+
+data/bed/API_SH.MED.BEDS.ZS_DS2_en_csv_v2.csv
+
+data/bed/Metadata_Country_API_SH.MED.BEDS.ZS_DS2_en_csv_v2.csv
+
+data/bed/Metadata_Indicator_API_SH.MED.BEDS.ZS_DS2_en_csv_v2.csv
+
+data/phys/API_SH.MED.PHYS.ZS_DS2_en_csv_v2.csv
+
+data/phys/Metadata_Country_API_SH.MED.PHYS.ZS_DS2_en_csv_v2.csv
+
+data/phys/Metadata_Indicator_API_SH.MED.PHYS.ZS_DS2_en_csv_v2.csv
