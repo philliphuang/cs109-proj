@@ -18,3 +18,27 @@ data/phys/API_SH.MED.PHYS.ZS_DS2_en_csv_v2.csv
 data/phys/Metadata_Country_API_SH.MED.PHYS.ZS_DS2_en_csv_v2.csv
 
 data/phys/Metadata_Indicator_API_SH.MED.PHYS.ZS_DS2_en_csv_v2.csv
+
+data/food/FoodSupply_Crops_E_All_Data_(Norm).csv
+
+data/food/FoodSupply_Crops_E_All_Data.csv
+
+data/food/FoodSupply_LivestockFish_E_All_Data_(Norm).csv
+
+data/food/FoodSupply_LivestockFish_E_All_Data.csv
+
+data/ncd/death_under70.csv
+
+data/ncd/deathper100k_all.csv
+
+data/ncd/deathper100k_cancer.csv
+
+data/ncd/deathper100k_cardio.csv
+
+data/ncd/deathper100k_diabetes.csv
+
+data/ncd/deathper100k_resp.csv
+
+data/ncd/risk.csv
+
+data/ncd/total_death.csv
