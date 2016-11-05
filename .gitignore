@@ -42,3 +42,13 @@ data/ncd/deathper100k_resp.csv
 data/ncd/risk.csv
 
 data/ncd/total_death.csv
+
+data/ncd/death100k_all.csv
+
+data/ncd/death100k_cancer.csv
+
+data/ncd/death100k_cardio.csv
+
+data/ncd/death100k_diabetes.csv
+
+data/ncd/death100k_resp.csv
