@@ -71,7 +71,7 @@ bI00
 (lp32
 S'Country'
 p33
-aS'Both sexes'
+aS'Percent'
 p34
 atp35
 bsS'name'
@@ -124,706 +124,464 @@ g22
 tp56
 Rp57
 (I1
-(I2
+(I1
 I172
 tp58
+g26
+(S'f8'
+p59
+I0
+I1
+tp60
+Rp61
+(I3
+S'<'
+p62
+NNNI-1
+I-1
+I0
+tp63
+bI00
+S"\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f333333A@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x99C@\x00\x00\x00\x00\x00\x00\xf8\x7f\xcd\xcc\xcc\xcc\xcc\xcc7@\xcd\xcc\xcc\xcc\xcc\xcc7@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x80E@\x00\x00\x00\x00\x00\x00\xf8\x7f\xcd\xcc\xcc\xcc\xcc\xcc:@\xcd\xcc\xcc\xcc\xcc\xccB@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x99@@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x99\x1b@ffffff!@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x192@333333;@\xcd\xcc\xcc\xcc\xcc\xcc;@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x005@ffffff2@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x996@\x9a\x99\x99\x99\x99\x993@\x9a\x99\x99\x99\x99\x99$@33333\xb3>@3333337@\x00\x00\x00\x00\x00\x00(@\x9a\x99\x99\x99\x99\x998@\xcd\xcc\xcc\xcc\xccL5@\x9a\x99\x99\x99\x99\x198@\xcd\xcc\xcc\xcc\xcc\xccO@ffffff,@ffffff9@\x00\x00\x00\x00\x00\x00\xf8\x7f3333330@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99YA@\xcd\xcc\xcc\xcc\xcc\xcc7@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00:@\xcd\xcc\xcc\xcc\xccL8@\x00\x00\x00\x00\x00\x00\xf8\x7f33333\xf3A@3333339@fffff&@@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7fffffff%@\xcd\xcc\xcc\xcc\xcc\xcc'@fffff\xe62@\x00\x00\x00\x00\x00\x001@\x00\x00\x00\x00\x00\x807@\xcd\xcc\xcc\xcc\xcc\xcc7@\x00\x00\x00\x00\x00\x00:@\x00\x00\x00\x00\x00\x805@\x9a\x99\x99\x99\x99\x994@\x9a\x99\x99\x99\x99\x195@333333/@\xcd\xcc\xcc\xcc\xcc\xcc)@\x9a\x99\x99\x99\x99\x99*@\xcd\xcc\xcc\xcc\xcc\xcc#@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x192@\x00\x00\x00\x00\x00\x00\xf8\x7f\xcd\xcc\xcc\xcc\xcc\xcc*@33333\xb37@\x00\x00\x00\x00\x00\xc0@@fffff\xa6H@\xcd\xcc\xcc\xcc\xcc\x8cA@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x99@@fffff\xe6;@fffff\xe6@@333333/@\x9a\x99\x99\x99\x99\x994@3333333@\xcd\xcc\xcc\xcc\xccLL@\x9a\x99\x99\x99\x99\x99*@\x9a\x99\x99\x99\x99\x99$@\x00\x00\x00\x00\x00\x006@ffffffC@\xcd\xcc\xcc\xcc\xcc\xcc\x1c@\x00\x00\x00\x00\x00\x80;@\x00\x00\x00\x00\x00\x00C@ffffff2@\x00\x00\x00\x00\x00\x80<@fffff\xe61@\x00\x00\x00\x00\x00\x00\x1e@fffff&J@33333\xb3>@33333\xb37@33333sE@\xcd\xcc\xcc\xcc\xcc\x8cF@3333339@\x00\x00\x00\x00\x00\x00:@ffffff5@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f333333\x17@\xcd\xcc\xcc\xcc\xcc\xcc#@\xcd\xcc\xcc\xcc\xcc\xcc?@ffffff\x10@\x00\x00\x00\x00\x00\x00/@fffff\xe6C@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x199@\xcd\xcc\xcc\xcc\xccL6@\xcd\xcc\xcc\xcc\xcc\xcc9@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00:@\x00\x00\x00\x00\x00\x00\xf8\x7fffffff-@\x9a\x99\x99\x99\x99\x998@\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x99/@33333\xb32@33333sA@\xcd\xcc\xcc\xcc\xcc\xccD@33333\xb3@@\x9a\x99\x99\x99\x99\x99(@\xcd\xcc\xcc\xcc\xccL9@\x00\x00\x00\x00\x00\x00#@\x9a\x99\x99\x99\x99\x99.@\x00\x00\x00\x00\x00\x80N@\x00\x00\x00\x00\x00\x009@\x9a\x99\x99\x99\x99YC@ffffff,@\xcd\xcc\xcc\xcc\xcc\x8c@@\xcd\xcc\xcc\xcc\xcc\xcc1@\xcd\xcc\xcc\xcc\xccL5@\xcd\xcc\xcc\xcc\xcc\x8cA@\x00\x00\x00\x00\x00\x00\xf8\x7f33333sG@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x80>@\xcd\xcc\xcc\xcc\xcc\xcc7@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7fffffffB@33333\xb3<@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x9a\x99\x99\x99\x99\x99-@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\xcd\xcc\xcc\xcc\xcc\xcc$@\x00\x00\x00\x00\x00\xc0D@\x00\x00\x00\x00\x00\x807@ffffff@@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7fffffff(@333333C@fffff\xa6B@\x9a\x99\x99\x99\x99\x99\x1b@333333@@33333\xb3?@3333333@\x00\x00\x00\x00\x00\x00\xf8\x7ffffff\xe67@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x804@ffffff6@"
+p64
+tp65
+bag19
+(g20
+(I0
+tp66
+g22
+tp67
+Rp68
+(I1
+(I1
+I172
+tp69
 g29
 I00
-(lp59
+(lp70
 S'Afghanistan'
-p60
-aS'Albania'
-p61
-aS'Algeria'
-p62
-aS'Angola'
-p63
-aS'Argentina'
-p64
-aS'Armenia'
-p65
-aS'Australia'
-p66
-aS'Austria'
-p67
-aS'Azerbaijan'
-p68
-aS'Bahamas'
-p69
-aS'Bahrain'
-p70
-aS'Bangladesh'
 p71
-aS'Barbados'
+aS'Albania'
 p72
-aS'Belarus'
+aS'Algeria'
 p73
-aS'Belgium'
+aS'Angola'
 p74
-aS'Belize'
+aS'Argentina'
 p75
-aS'Benin'
+aS'Armenia'
 p76
-aS'Bhutan'
+aS'Australia'
 p77
-aS'Bolivia (Plurinational State of)'
+aS'Austria'
 p78
-aS'Bosnia and Herzegovina'
+aS'Azerbaijan'
 p79
-aS'Botswana'
+aS'Bahamas'
 p80
-aS'Brazil'
+aS'Bahrain'
 p81
-aS'Brunei Darussalam'
+aS'Bangladesh'
 p82
-aS'Bulgaria'
+aS'Barbados'
 p83
-aS'Burkina Faso'
+aS'Belarus'
 p84
-aS'Burundi'
+aS'Belgium'
 p85
-aS"Cote d'Ivoire"
+aS'Belize'
 p86
-aS'Cabo Verde'
+aS'Benin'
 p87
-aS'Cambodia'
+aS'Bhutan'
 p88
-aS'Cameroon'
+aS'Bolivia (Plurinational State of)'
 p89
-aS'Canada'
+aS'Bosnia and Herzegovina'
 p90
-aS'Central African Republic'
+aS'Botswana'
 p91
-aS'Chad'
+aS'Brazil'
 p92
-aS'Chile'
+aS'Brunei Darussalam'
 p93
-aS'China'
+aS'Bulgaria'
 p94
-aS'Colombia'
+aS'Burkina Faso'
 p95
-aS'Comoros'
+aS'Burundi'
 p96
-aS'Congo'
+aS"Cote d'Ivoire"
 p97
-aS'Costa Rica'
+aS'Cabo Verde'
 p98
-aS'Croatia'
+aS'Cambodia'
 p99
-aS'Cuba'
+aS'Cameroon'
 p100
-aS'Cyprus'
+aS'Canada'
 p101
-aS'Czech Republic'
+aS'Central African Republic'
 p102
-aS"Democratic People's Republic of Korea"
+aS'Chad'
 p103
-aS'Democratic Republic of the Congo'
+aS'Chile'
 p104
-aS'Denmark'
+aS'China'
 p105
-aS'Djibouti'
+aS'Colombia'
 p106
-aS'Dominican Republic'
+aS'Comoros'
 p107
-aS'Ecuador'
+aS'Congo'
 p108
-aS'Egypt'
+aS'Costa Rica'
 p109
-aS'El Salvador'
+aS'Croatia'
 p110
-aS'Equatorial Guinea'
+aS'Cuba'
 p111
-aS'Eritrea'
+aS'Cyprus'
 p112
-aS'Estonia'
+aS'Czech Republic'
 p113
-aS'Ethiopia'
+aS"Democratic People's Republic of Korea"
 p114
-aS'Fiji'
+aS'Democratic Republic of the Congo'
 p115
-aS'Finland'
+aS'Denmark'
 p116
-aS'France'
+aS'Djibouti'
 p117
-aS'Gabon'
+aS'Dominican Republic'
 p118
-aS'Gambia'
+aS'Ecuador'
 p119
-aS'Georgia'
+aS'Egypt'
 p120
-aS'Germany'
+aS'El Salvador'
 p121
-aS'Ghana'
+aS'Equatorial Guinea'
 p122
-aS'Greece'
+aS'Eritrea'
 p123
-aS'Guatemala'
+aS'Estonia'
 p124
-aS'Guinea'
+aS'Ethiopia'
 p125
-aS'Guinea-Bissau'
+aS'Fiji'
 p126
-aS'Guyana'
+aS'Finland'
 p127
-aS'Haiti'
+aS'France'
 p128
-aS'Honduras'
+aS'Gabon'
 p129
-aS'Hungary'
+aS'Gambia'
 p130
-aS'Iceland'
+aS'Georgia'
 p131
-aS'India'
+aS'Germany'
 p132
-aS'Indonesia'
+aS'Ghana'
 p133
-aS'Iran (Islamic Republic of)'
+aS'Greece'
 p134
-aS'Iraq'
+aS'Guatemala'
 p135
-aS'Ireland'
+aS'Guinea'
 p136
-aS'Israel'
+aS'Guinea-Bissau'
 p137
-aS'Italy'
+aS'Guyana'
 p138
-aS'Jamaica'
+aS'Haiti'
 p139
-aS'Japan'
+aS'Honduras'
 p140
-aS'Jordan'
+aS'Hungary'
 p141
-aS'Kazakhstan'
+aS'Iceland'
 p142
-aS'Kenya'
+aS'India'
 p143
-aS'Kuwait'
+aS'Indonesia'
 p144
-aS'Kyrgyzstan'
+aS'Iran (Islamic Republic of)'
 p145
-aS"Lao People's Democratic Republic"
+aS'Iraq'
 p146
-aS'Latvia'
+aS'Ireland'
 p147
-aS'Lebanon'
+aS'Israel'
 p148
-aS'Lesotho'
+aS'Italy'
 p149
-aS'Liberia'
+aS'Jamaica'
 p150
-aS'Libya'
+aS'Japan'
 p151
-aS'Lithuania'
+aS'Jordan'
 p152
-aS'Luxembourg'
+aS'Kazakhstan'
 p153
-aS'Madagascar'
+aS'Kenya'
 p154
-aS'Malawi'
+aS'Kuwait'
 p155
-aS'Malaysia'
+aS'Kyrgyzstan'
 p156
-aS'Maldives'
+aS"Lao People's Democratic Republic"
 p157
-aS'Mali'
+aS'Latvia'
 p158
-aS'Malta'
+aS'Lebanon'
 p159
-aS'Mauritania'
+aS'Lesotho'
 p160
-aS'Mauritius'
+aS'Liberia'
 p161
-aS'Mexico'
+aS'Libya'
 p162
-aS'Mongolia'
+aS'Lithuania'
 p163
-aS'Montenegro'
+aS'Luxembourg'
 p164
-aS'Morocco'
+aS'Madagascar'
 p165
-aS'Mozambique'
+aS'Malawi'
 p166
-aS'Myanmar'
+aS'Malaysia'
 p167
-aS'Namibia'
+aS'Maldives'
 p168
-aS'Nepal'
+aS'Mali'
 p169
-aS'Netherlands'
+aS'Malta'
 p170
-aS'New Zealand'
+aS'Mauritania'
 p171
-aS'Nicaragua'
+aS'Mauritius'
 p172
-aS'Niger'
+aS'Mexico'
 p173
-aS'Nigeria'
+aS'Mongolia'
 p174
-aS'Norway'
+aS'Montenegro'
 p175
-aS'Oman'
+aS'Morocco'
 p176
-aS'Pakistan'
+aS'Mozambique'
 p177
-aS'Panama'
+aS'Myanmar'
 p178
-aS'Papua New Guinea'
+aS'Namibia'
 p179
-aS'Paraguay'
+aS'Nepal'
 p180
-aS'Peru'
+aS'Netherlands'
 p181
-aS'Philippines'
+aS'New Zealand'
 p182
-aS'Poland'
+aS'Nicaragua'
 p183
-aS'Portugal'
+aS'Niger'
 p184
-aS'Qatar'
+aS'Nigeria'
 p185
-aS'Republic of Korea'
+aS'Norway'
 p186
-aS'Republic of Moldova'
+aS'Oman'
 p187
-aS'Romania'
+aS'Pakistan'
 p188
-aS'Russian Federation'
+aS'Panama'
 p189
-aS'Rwanda'
+aS'Papua New Guinea'
 p190
-aS'Saudi Arabia'
+aS'Paraguay'
 p191
-aS'Senegal'
+aS'Peru'
 p192
-aS'Serbia'
+aS'Philippines'
 p193
-aS'Sierra Leone'
+aS'Poland'
 p194
-aS'Singapore'
+aS'Portugal'
 p195
-aS'Slovakia'
+aS'Qatar'
 p196
-aS'Slovenia'
+aS'Republic of Korea'
 p197
-aS'Solomon Islands'
+aS'Republic of Moldova'
 p198
-aS'Somalia'
+aS'Romania'
 p199
-aS'South Africa'
+aS'Russian Federation'
 p200
-aS'South Sudan'
+aS'Rwanda'
 p201
-aS'Spain'
+aS'Saudi Arabia'
 p202
-aS'Sri Lanka'
+aS'Senegal'
 p203
-aS'Sudan'
+aS'Serbia'
 p204
-aS'Suriname'
+aS'Sierra Leone'
 p205
-aS'Swaziland'
+aS'Singapore'
 p206
-aS'Sweden'
+aS'Slovakia'
 p207
-aS'Switzerland'
+aS'Slovenia'
 p208
-aS'Syrian Arab Republic'
+aS'Solomon Islands'
 p209
-aS'Tajikistan'
+aS'Somalia'
 p210
-aS'Thailand'
+aS'South Africa'
 p211
-aS'The former Yugoslav republic of Macedonia'
+aS'South Sudan'
 p212
-aS'Timor-Leste'
+aS'Spain'
 p213
-aS'Togo'
+aS'Sri Lanka'
 p214
-aS'Trinidad and Tobago'
+aS'Sudan'
 p215
-aS'Tunisia'
+aS'Suriname'
 p216
-aS'Turkey'
+aS'Swaziland'
 p217
-aS'Turkmenistan'
+aS'Sweden'
 p218
-aS'Uganda'
+aS'Switzerland'
 p219
-aS'Ukraine'
+aS'Syrian Arab Republic'
 p220
-aS'United Arab Emirates'
+aS'Tajikistan'
 p221
-aS'United Kingdom of Great Britain and Northern Ireland'
+aS'Thailand'
 p222
-aS'United Republic of Tanzania'
+aS'The former Yugoslav republic of Macedonia'
 p223
-aS'United States of America'
+aS'Timor-Leste'
 p224
-aS'Uruguay'
+aS'Togo'
 p225
-aS'Uzbekistan'
+aS'Trinidad and Tobago'
 p226
-aS'Venezuela (Bolivarian Republic of)'
+aS'Tunisia'
 p227
-aS'Viet Nam'
+aS'Turkey'
 p228
-aS'Yemen'
+aS'Turkmenistan'
 p229
-aS'Zambia'
+aS'Uganda'
 p230
-aS'Zimbabwe'
+aS'Ukraine'
 p231
-aFnan
-aFnan
-aS'34.4 [30.5-38.5]'
+aS'United Arab Emirates'
 p232
-aFnan
-aS'39.2 [13.5-76.6]'
+aS'United Kingdom of Great Britain and Northern Ireland'
 p233
-aFnan
-aS'23.8 [6.4-58.9]'
+aS'United Republic of Tanzania'
 p234
-aS'23.8 [6.3-58.1]'
+aS'United States of America'
 p235
-aFnan
-aS'43 [36.5-49.6]'
+aS'Uruguay'
 p236
-aFnan
-aS'26.8 [25.9-27.8]'
+aS'Uzbekistan'
 p237
-aS'37.6 [33.6-41.7]'
+aS'Venezuela (Bolivarian Republic of)'
 p238
-aFnan
-aS'33.2 [10.6-70.5]'
+aS'Viet Nam'
 p239
-aFnan
-aS'6.9 [5.6-8.6]'
+aS'Yemen'
 p240
-aS'8.7 [7.5-10.2]'
+aS'Zambia'
 p241
-aFnan
-aS'18.1 [4.8-48.5]'
+aS'Zimbabwe'
 p242
-aS'27.2 [19.6-36]'
-p243
-aS'27.8 [8-63.9]'
-p244
-aFnan
-aS'21 [5.2-54.3]'
-p245
-aS'18.4 [16.1-21.1]'
-p246
-aFnan
-aS'22.6 [6-56.3]'
-p247
-aS'19.6 [13.5-27.4]'
-p248
-aS'10.3 [9.3-11.4]'
-p249
-aS'30.7 [8.3-59]'
-p250
-aS'23.2 [6.1-57]'
-p251
-aS'12 [2-24.2]'
-p252
-aS'24.6 [6.3-58.8]'
-p253
-aS'21.3 [18.4-24.4]'
-p254
-aS'24.1 [21.7-26.5]'
-p255
-aS'63.6 [58.3-68.7]'
-p256
-aS'14.2 [13.1-15.4]'
-p257
-aS'25.4 [6.8-59.4]'
-p258
-aFnan
-aS'16.2 [3.8-43]'
-p259
-aFnan
-aS'34.7 [10.7-71.9]'
-p260
-aS'23.8 [18.5-29.6]'
-p261
-aFnan
-aS'26 [20.7-32]'
-p262
-aS'24.3 [6.4-58.9]'
-p263
-aFnan
-aS'35.9 [11.6-73.3]'
-p264
-aS'25.2 [6.8-60.4]'
-p265
-aS'32.3 [28-36.9]'
-p266
-aFnan
-aFnan
-aS'10.7 [9.2-12.2]'
-p267
-aS'11.9 [2.7-35.1]'
-p268
-aS'18.9 [4.9-50.1]'
-p269
-aS'17 [14.7-19.4]'
-p270
-aS'23.5 [6.1-57.6]'
-p271
-aS'23.8 [19.9-28]'
-p272
-aS'26 [4.5-43.4]'
-p273
-aS'21.5 [16.7-27.1]'
-p274
-aS'20.6 [18.9-22.4]'
-p275
-aS'21.1 [5.2-54.4]'
-p276
-aS'15.6 [13.2-18.2]'
-p277
-aS'12.9 [2.9-36.5]'
-p278
-aS'13.3 [2.8-38.8]'
-p279
-aS'9.9 [1.7-20.9]'
-p280
-aFnan
-aFnan
-aFnan
-aFnan
-aS'18.1 [4.4-48.5]'
-p281
-aFnan
-aS'13.4 [12.2-14.8]'
-p282
-aS'23.7 [19-29.1]'
-p283
-aS'33.5 [32.1-34.9]'
-p284
-aS'49.3 [45.4-53.2]'
-p285
-aS'35.1 [10.9-72.3]'
-p286
-aFnan
-aS'33.2 [9.9-70.4]'
-p287
-aS'27.9 [7.9-64.7]'
-p288
-aS'33.8 [11.1-71.6]'
-p289
-aS'15.6 [14.3-17]'
-p290
-aS'20.6 [5.2-53.2]'
-p291
-aS'19.2 [4.5-49.7]'
-p292
-aS'56.6 [54.3-58.8]'
-p293
-aS'13.3 [11.7-15]'
-p294
-aS'10.3 [8.7-12.1]'
-p295
-aS'22 [5.5-56.6]'
-p296
-aS'38.8 [33.1-44.7]'
-p297
-aS'7.2 [6-8.6]'
-p298
-aS'27.5 [23.7-31.7]'
-p299
-aS'38 [34.8-41.4]'
-p300
-aS'18.4 [12.3-25.6]'
-p301
-aS'28.5 [8-65]'
-p302
-aS'17.9 [15.1-21.2]'
-p303
-aS'7.5 [6.6-8.5]'
-p304
-aS'52.3 [47.1-57.6]'
-p305
-aS'30.7 [6.5-54.6]'
-p306
-aS'23.7 [6.7-58.2]'
-p307
-aS'42.9 [14.9-79.4]'
-p308
-aS'45.1 [16.5-81.1]'
-p309
-aS'25.2 [7-60]'
-p310
-aS'26 [20.5-32.1]'
-p311
-aS'21.4 [18.5-24.5]'
-p312
-aFnan
-aFnan
-aS'5.8 [4.2-8.1]'
-p313
-aS'9.9 [8.3-11.8]'
-p314
-aS'31.8 [9.7-69.5]'
-p315
-aS'4.1 [3.7-4.6]'
-p316
-aS'15.5 [3.5-42.1]'
-p317
-aS'39.8 [37.5-42]'
-p318
-aFnan
-aS'25.1 [20.8-29.9]'
-p319
-aS'22.3 [8.5-66.3]'
-p320
-aS'25.8 [7-61]'
-p321
-aFnan
-aS'26 [7.2-62]'
-p322
-aFnan
-aS'14.7 [13-16.4]'
-p323
-aS'24.6 [6.6-59.6]'
-p324
-aFnan
-aS'15.8 [3.6-44.2]'
-p325
-aS'18.7 [4.7-50.4]'
-p326
-aS'34.9 [10.8-72]'
-p327
-aS'41.6 [38.1-45.1]'
-p328
-aS'33.4 [10.2-71]'
-p329
-aS'12.3 [11-13.7]'
-p330
-aS'25.3 [6.8-61.7]'
-p331
-aS'9.5 [6.8-12.8]'
-p332
-aS'15.3 [14-16.7]'
-p333
-aS'61 [57.1-64.7]'
-p334
-aS'25 [7.2-60.2]'
-p335
-aS'38.7 [13.2-75.8]'
-p336
-aS'14.2 [11.3-17.7]'
-p337
-aS'33.1 [30.7-35.5]'
-p338
-aS'17.8 [4.9-49.7]'
-p339
-aS'21.3 [5.1-53.2]'
-p340
-aS'35.1 [30.3-40.1]'
-p341
-aFnan
-aS'46.9 [42.7-51.1]'
-p342
-aFnan
-aS'30.5 [9.1-68]'
-p343
-aS'23.8 [21.8-25.9]'
-p344
-aFnan
-aFnan
-aS'36.8 [11.8-74.4]'
-p345
-aS'28.7 [8.1-65.2]'
-p346
-aFnan
-aFnan
-aFnan
-aS'14.8 [13.5-16.1]'
-p347
-aFnan
-aFnan
-aS'10.4 [9-12]'
-p348
-aS'41.5 [38.6-44.5]'
-p349
-aS'23.5 [6.5-57.4]'
-p350
-aS'32.8 [10.3-70.1]'
-p351
-aFnan
-aFnan
-aS'12.2 [2.7-35.1]'
-p352
-aS'38.4 [11.9-74.6]'
-p353
-aS'37.3 [35.9-38.8]'
-p354
-aS'6.9 [5.9-7.9]'
-p355
-aS'32.4 [29.8-35]'
-p356
-aS'31.7 [26.2-37.6]'
-p357
-aS'19.2 [17-21.6]'
-p358
-aFnan
-aS'23.9 [16.6-32.9]'
-p359
-aFnan
-aS'20.5 [5.2-52.6]'
-p360
-aS'22.4 [5.8-54.9]'
-p361
-atp362
-ba(lp363
+atp243
+ba(lp244
 g15
 (g16
-(dp364
+(dp245
 g18
 g19
 (g20
 (I0
-tp365
+tp246
 g22
-tp366
-Rp367
+tp247
+Rp248
 (I1
-(I2
-tp368
+(I1
+tp249
 g29
 I00
-(lp369
-g33
-ag34
-atp370
+(lp250
+g34
+atp251
 bsg36
-Nstp371
-Rp372
-a(dp373
+Nstp252
+Rp253
+ag15
+(g16
+(dp254
+g18
+g19
+(g20
+(I0
+tp255
+g22
+tp256
+Rp257
+(I1
+(I1
+tp258
+g29
+I00
+(lp259
+g33
+atp260
+bsg36
+Nstp261
+Rp262
+a(dp263
 S'0.14.1'
-p374
-(dp375
+p264
+(dp265
 S'axes'
-p376
+p266
 g14
 sS'blocks'
-p377
-(lp378
-(dp379
+p267
+(lp268
+(dp269
 S'mgr_locs'
-p380
+p270
 c__builtin__
 slice
-p381
-(I0
+p271
+(I1
 I2
 I1
-tp382
-Rp383
+tp272
+Rp273
 sS'values'
-p384
+p274
 g57
-sasstp385
+sa(dp275
+g270
+g271
+(I0
+I1
+I1
+tp276
+Rp277
+sg274
+g68
+sasstp278
 bsb.
