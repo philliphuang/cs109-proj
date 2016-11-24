@@ -52,3 +52,7 @@ data/ncd/death100k_cardio.csv
 data/ncd/death100k_diabetes.csv
 
 data/ncd/death100k_resp.csv
+
+data/exercise/alt.csv
+
+data/exercise/data.csv
