@@ -1,0 +1,440 @@
+ccopy_reg
+_reconstructor
+p0
+(cpandas.core.frame
+DataFrame
+p1
+c__builtin__
+object
+p2
+Ntp3
+Rp4
+(dp5
+S'_metadata'
+p6
+(lp7
+sS'_typ'
+p8
+S'dataframe'
+p9
+sS'_data'
+p10
+g0
+(cpandas.core.internals
+BlockManager
+p11
+g2
+Ntp12
+Rp13
+((lp14
+cpandas.indexes.base
+_new_Index
+p15
+(cpandas.indexes.base
+Index
+p16
+(dp17
+S'data'
+p18
+cnumpy.core.multiarray
+_reconstruct
+p19
+(cnumpy
+ndarray
+p20
+(I0
+tp21
+S'b'
+p22
+tp23
+Rp24
+(I1
+(I7
+tp25
+cnumpy
+dtype
+p26
+(S'O8'
+p27
+I0
+I1
+tp28
+Rp29
+(I3
+S'|'
+p30
+NNNI-1
+I-1
+I63
+tp31
+bI00
+(lp32
+S'Item Code'
+p33
+aS'Item'
+p34
+aS'Description'
+p35
+aS'HS Code'
+p36
+aS'HS07 Code'
+p37
+aS'HS12 Code'
+p38
+aS'CPC Code'
+p39
+atp40
+bsS'name'
+p41
+Nstp42
+Rp43
+ag15
+(cpandas.indexes.range
+RangeIndex
+p44
+(dp45
+S'start'
+p46
+I0
+sS'step'
+p47
+I1
+sS'stop'
+p48
+I39
+sg41
+Nstp49
+Rp50
+a(lp51
+g19
+(g20
+(I0
+tp52
+g22
+tp53
+Rp54
+(I1
+(I4
+I39
+tp55
+g26
+(S'f8'
+p56
+I0
+I1
+tp57
+Rp58
+(I3
+S'<'
+p59
+NNNI-1
+I-1
+I0
+tp60
+bI00
+S'\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\xf8\x7f'
+p61
+tp62
+bag19
+(g20
+(I0
+tp63
+g22
+tp64
+Rp65
+(I1
+(I1
+I39
+tp66
+g26
+(S'i8'
+p67
+I0
+I1
+tp68
+Rp69
+(I3
+S'<'
+p70
+NNNI-1
+I-1
+I0
+tp71
+bI00
+S"\x82\x0b\x00\x00\x00\x00\x00\x00}\x0b\x00\x00\x00\x00\x00\x00\xd1\n\x00\x00\x00\x00\x00\x00\xd7\n\x00\x00\x00\x00\x00\x00\x91\x0b\x00\x00\x00\x00\x00\x00\xab\n\x00\x00\x00\x00\x00\x00\xb4\n\x00\x00\x00\x00\x00\x00\xce\n\x00\x00\x00\x00\x00\x00\xb5\n\x00\x00\x00\x00\x00\x00\xb7\n\x00\x00\x00\x00\x00\x00\xcd\n\x00\x00\x00\x00\x00\x00\xca\n\x00\x00\x00\x00\x00\x00\xb8\n\x00\x00\x00\x00\x00\x00\x85\x0b\x00\x00\x00\x00\x00\x00\xb1\n\x00\x00\x00\x00\x00\x00'\x0b\x00\x00\x00\x00\x00\x00\xdd\n\x00\x00\x00\x00\x00\x00\xde\n\x00\x00\x00\x00\x00\x00\x90\x0b\x00\x00\x00\x00\x00\x00\xc9\n\x00\x00\x00\x00\x00\x00U\x0b\x00\x00\x00\x00\x00\x00\xbc\n\x00\x00\x00\x00\x00\x00\xb9\n\x00\x00\x00\x00\x00\x00\xcc\n\x00\x00\x00\x00\x00\x00\x7f\x0b\x00\x00\x00\x00\x00\x00\xbd\n\x00\x00\x00\x00\x00\x00\xd0\n\x00\x00\x00\x00\x00\x00\xaf\n\x00\x00\x00\x00\x00\x00\x84\x0b\x00\x00\x00\x00\x00\x00 \x0b\x00\x00\x00\x00\x00\x00\xb2\n\x00\x00\x00\x00\x00\x00\xcf\n\x00\x00\x00\x00\x00\x00\xac\n\x00\x00\x00\x00\x00\x00\x81\x0b\x00\x00\x00\x00\x00\x00\xb0\n\x00\x00\x00\x00\x00\x00\xcb\n\x00\x00\x00\x00\x00\x00\xad\n\x00\x00\x00\x00\x00\x00\xae\n\x00\x00\x00\x00\x00\x00\xb6\n\x00\x00\x00\x00\x00\x00"
+p72
+tp73
+bag19
+(g20
+(I0
+tp74
+g22
+tp75
+Rp76
+(I1
+(I2
+I39
+tp77
+g29
+I00
+(lp78
+S'Animal fats'
+p79
+aS'Animal Products'
+p80
+aS'Aquatic Animals, Others'
+p81
+aS'Aquatic Plants'
+p82
+aS'Aquatic Products, Other'
+p83
+aS'Bovine Meat'
+p84
+aS'Butter, Ghee'
+p85
+aS'Cephalopods'
+p86
+aS'Cheese'
+p87
+aS'Cream'
+p88
+aS'Crustaceans'
+p89
+aS'Demersal Fish'
+p90
+aS'Eggs'
+p91
+ag91
+aS'Fats, Animals, Raw'
+p92
+aS'Fish Meal'
+p93
+aS'Fish, Body Oil'
+p94
+aS'Fish, Liver Oil'
+p95
+aS'Fish, Seafood'
+p96
+aS'Freshwater Fish'
+p97
+aS'Grand Total'
+p98
+aS'Hides and skins'
+p99
+aS'Honey'
+p100
+aS'Marine Fish, Other'
+p101
+aS'Meat'
+p102
+aS'Meat Meal'
+p103
+aS'Meat, Aquatic Mammals'
+p104
+aS'Meat, Other'
+p105
+aS'Milk - Excluding Butter'
+p106
+ag106
+aS'Milk, Whole'
+p107
+aS'Molluscs, Other'
+p108
+aS'Mutton & Goat Meat'
+p109
+aS'Offals'
+p110
+aS'Offals, Edible'
+p111
+aS'Pelagic Fish'
+p112
+aS'Pigmeat'
+p113
+aS'Poultry Meat'
+p114
+aS'Whey'
+p115
+aFnan
+aFnan
+aS'Default composition: 1587 Aqutc Anim F, 1588 Aq A Cured, 1589 Aquatic Animals Meals, 1590 Aq A Prep Ns'
+p116
+aS'Default composition: 1594 Aquatic plants, fresh, 1595 Aquatic plants, dried, 1596 Aquatic plants, other preparations'
+p117
+aFnan
+aS'Default composition: 867 Meat, cattle, 870 Meat, cattle, boneless (beef & veal), 872 Meat, beef, dried, salted, smoked, 873 Meat, extracts, 874 Meat, beef and veal sausages, 875 Meat, beef, preparations, 876 Meat, beef, canned, 877 Meat, homogenized preparations, 947 Meat, buffalo'
+p118
+aS'Default composition: 886 Butter, cow milk, 887 Ghee, butteroil of cow milk, 952 Butter, buffalo milk, 953 Ghee, of buffalo milk, 983 Butter and ghee, sheep milk, 1022 Butter of goat mlk'
+p119
+aS'Default composition: 1570 Cephlp Fresh, 1571 Cphlp Frozen, 1572 Cphlp Cured, 1573 Cphlp Canned, 1574 Cphlp Pr nes, 1575 Cphlp Meals'
+p120
+aFnan
+aS'Default composition: 885 Cream fresh'
+p121
+aS'Default composition: 1553 Crstaceans F, 1554 Crstc Frozen, 1555 Crstc Cured, 1556 Crstc Canned, 1557 Crstc Pr nes, 1558 Crstc Meals'
+p122
+aS'Default composition: 1514 Dmrsl Fresh, 1515 Dmrsl Fz Whl, 1516 Dmrsl Fillet, 1517 Dmrsl Fz Flt, 1518 Dmrsl Cured, 1519 Dmrsl Canned, 1520 Dmrsl Pr nes, 1521 Dmrsl Meals'
+p123
+aS'Default composition: 916 Egg albumine, 1062 Eggs, hen, in shell, 1063 Eggs, liquid, 1064 Eggs, dried, 1091 Eggs, other bird, in shell'
+p124
+aFnan
+aS'Default composition: 869 Fat, cattle, 871 Fat, cattle butcher, 949 Fat, buffaloes, 979 Fat, sheep, 994 Grease incl. lanolin wool, 1019 Fat, goats, 1037 Fat, pigs, 1040 Fat, pig butcher, 1043 Lard, 1065 Fat, poultry, 1066 Fat, poultry, rendered, 1129 Fat, camels, 1160 Fat, other camelids, 1168 Oils, fats of animal nes, 1221 Lard stearine oil, 1222 Degras, 1225 Tallow, 1243 Fat, nes, prepared'
+p125
+aS'Default composition: 1511 Freshwater Meal Fr Offal, 1524 Demersal Meal from Offal, 1537 Pelagic Meal from Offal, 1550 Marn Meal Of, 1559 Crustaceans Meal F Offal, 1567 Molluscs Meal from Offal, 1576 Cephalopods Meal F Offal, 1581 Aquatic Mammals Meals, 1584 Aqua Mammal Meal F Offal, 1591 Aq A Meal Of'
+p126
+aS'Default composition: 1509 Frwt Bdy Oil, 1522 Dmrs Bdy Oil, 1535 Pelg Bdy Oil, 1548 Marn Bdy Oil, 1582 Aq M Oils'
+p127
+aS'Default composition: 1510 Frwt Lvr Oil, 1523 Demersal Liver Oils, 1536 Pelg Lvr Oil, 1549 Marine nes Liver Oils'
+p128
+aFnan
+aS'Default composition: 1501 Frwtr Diad F, 1502 Frwtr Fz Whl, 1503 Frwtr Fillet, 1504 Frwtr Fz Flt, 1505 Frwtr Cured, 1506 Frwtr Canned, 1507 Frwtr Pr nes, 1508 Frwtr Meals'
+p129
+aFnan
+aS'Default composition: 919 Hides, cattle, fresh, 920 Hides, cattle, wet salted, 921 Hides, cattle, dry salted, 922 Hides, cattle, nes, 928 Skins, calve, wet salted, 929 Skins, calve, dry salted, 930 Skins, calve, nes, 957 Hides, buffalo, fresh, 958 Hides, buffalo, wet salted, 959 Hides, buffalo, dry salted, 995 Skins, sheep, fresh, 996 Skins, sheep, wet salted, 997 Skins, sheep, dry salted, 998 Skins, sheep, nes, 999 Skins, sheep, with wool, 1002 Skins, karakul, 1025 Skins, goat, fresh, 1026 Skins, goat, wet salted, 1027 Skins, goat, dry salted, 1028 Skins, goat, nes, 1044 Skins, pig, fresh, 1045 Skins, pig, wet salted, 1046 Skins, pig, dry salted, 1047 Skins, pig, nes, 1102 Hides, horse, fresh, 1103 Hides, horse, wet salted, 1104 Hides, horse, dry salted, 1105 Hides, horse, nes, 1109 Hides, ass, fresh, 1112 Hides, mule, fresh, 1133 Hides, camel, fresh, 1134 Hides, camel, wet salted, 1135 Hides, camel, dry salted, 1136 Hides, camel, nes, 1146 Skins, rabbit, 1195 Skins, furs, 1213 Hides and skins nes, fresh, 1214 Hides, wet salted, nes, 1215 Hides, nes, dry salted'
+p130
+aS'Default composition: 1182 Honey, natural'
+p131
+aS'Default composition: 1540 Marine nes F, 1541 Marin Fz Whl, 1542 Marin Fillet, 1543 Marin Fz Flt, 1544 Marin Cured, 1545 Marin Canned, 1546 Marin Pr nes, 1547 Marin Meals'
+p132
+aFnan
+aS'Default composition: 1173 Meal, meat, 1175 Meal, blood'
+p133
+aS'Default composition: 1580 Aq M Meat, 1583 Aq M Prep Ns'
+p134
+aS'Default composition: 1089 Meat, bird nes, 1097 Meat, horse, 1108 Meat, ass, 1111 Meat, mule, 1127 Meat, camel, 1141 Meat, rabbit, 1151 Meat, other rodents, 1158 Meat, other camelids, 1163 Meat, game, 1164 Meat, dried nes, 1166 Meat, nes, 1172 Meat, nes, preparations, 1176 Snails, not sea'
+p135
+aFnan
+aS'Default composition: 882 Milk, whole fresh cow, 888 Milk, skimmed cow, 889 Milk, whole condensed, 890 Whey, condensed, 891 Yoghurt, 892 Yoghurt, concentrated or not, 893 Buttermilk, curdled, acidified milk, 894 Milk, whole evaporated, 895 Milk, skimmed evaporated, 896 Milk, skimmed condensed, 897 Milk, whole dried, 898 Milk, skimmed dried, 899 Milk, dry buttermilk, 900 Whey, dry, 901 Cheese, whole cow milk, 903 Whey, fresh, 904 Cheese, skimmed cow milk, 905 Whey, cheese, 907 Cheese, processed, 908 Milk, reconstituted, 909 Milk, products of natural constituents nes, 910 Ice cream and edible ice, 917 Casein, 951 Milk, whole fresh buffalo, 954 Milk, skimmed buffalo, 955 Cheese, buffalo milk, 982 Milk, whole fresh sheep, 984 Cheese, sheep milk, 985 Milk, skimmed sheep, 1020 Milk, whole fresh goat, 1021 Cheese of goat mlk, 1023 Milk, skimmed goat, 1130 Milk, whole fresh camel'
+p136
+aFnan
+aS'Default composition: 1562 Mlluscs Frsh, 1563 Molsc Frozen, 1564 Molsc Cured, 1565 Molsc Canned, 1566 Molsc Meals'
+p137
+aS'Default composition: 977 Meat, sheep, 1017 Meat, goat'
+p138
+aFnan
+aS'Default composition: 868 Offals, edible, cattle, 878 Liver prep., 948 Offals, edible, buffaloes, 978 Offals, sheep,edible, 1018 Offals, edible, goats, 1036 Offals, pigs, edible, 1059 Offals, liver chicken, 1074 Offals, liver geese, 1075 Offals, liver duck, 1081 Offals, liver turkeys, 1098 Offals, horses, 1128 Offals, edible, camels, 1159 Offals, other camelids, 1167 Offals, nes'
+p139
+aS'Default composition: 1527 Pelagic Frsh, 1528 Pelgc Fz Whl, 1529 Pelgc Fillet, 1530 Pelgc Fz Flt, 1531 Pelgc Cured, 1532 Pelgc Canned, 1533 Pelgc Pr nes, 1534 Pelgc Meals'
+p140
+aS'Default composition: 1035 Meat, pig, 1038 Meat, pork, 1039 Bacon and ham, 1041 Meat, pig sausages, 1042 Meat, pig, preparations'
+p141
+aS'Default composition: 1058 Meat, chicken, 1060 Fat, liver prepared (foie gras), 1061 Meat, chicken, canned, 1069 Meat, duck, 1073 Meat, goose and guinea fowl, 1080 Meat, turkey'
+p142
+aFnan
+atp143
+ba(lp144
+g15
+(g16
+(dp145
+g18
+g19
+(g20
+(I0
+tp146
+g22
+tp147
+Rp148
+(I1
+(I4
+tp149
+g29
+I00
+(lp150
+g36
+ag37
+ag38
+ag39
+atp151
+bsg41
+Nstp152
+Rp153
+ag15
+(g16
+(dp154
+g18
+g19
+(g20
+(I0
+tp155
+g22
+tp156
+Rp157
+(I1
+(I1
+tp158
+g29
+I00
+(lp159
+g33
+atp160
+bsg41
+Nstp161
+Rp162
+ag15
+(g16
+(dp163
+g18
+g19
+(g20
+(I0
+tp164
+g22
+tp165
+Rp166
+(I1
+(I2
+tp167
+g29
+I00
+(lp168
+g34
+ag35
+atp169
+bsg41
+Nstp170
+Rp171
+a(dp172
+S'0.14.1'
+p173
+(dp174
+S'axes'
+p175
+g14
+sS'blocks'
+p176
+(lp177
+(dp178
+S'mgr_locs'
+p179
+c__builtin__
+slice
+p180
+(I3
+I7
+I1
+tp181
+Rp182
+sS'values'
+p183
+g54
+sa(dp184
+g179
+g180
+(I0
+I1
+I1
+tp185
+Rp186
+sg183
+g65
+sa(dp187
+g179
+g180
+(I1
+I3
+I1
+tp188
+Rp189
+sg183
+g76
+sasstp190
+bsb.
