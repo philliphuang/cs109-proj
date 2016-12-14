@@ -36,10 +36,10 @@ $('.title2').hide()
 $('.title3').hide()
 $('.title4').hide()
 $('.title5').hide()
-$('.title1').delay(400).fadeIn(300)
-$('.title2').delay(800).fadeIn(300)
-$('.title3').delay(1200).fadeIn(300)
-$('.title4').delay(1600).fadeIn(300)
-$('.title5').delay(2000).fadeIn(300)
-$('nav').delay(2400).fadeIn(600);
-$('section:not(#intro)').delay(2400).fadeIn(600);
+$('.title1').delay(500).fadeIn(300)
+$('.title2').delay(900).fadeIn(300)
+$('.title3').delay(1300).fadeIn(300)
+$('.title4').delay(1700).fadeIn(300)
+$('.title5').delay(2100).fadeIn(300)
+$('nav').delay(2500).fadeIn(600);
+$('section:not(#intro)').delay(2500).fadeIn(600);
