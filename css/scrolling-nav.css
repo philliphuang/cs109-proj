@@ -16,10 +16,12 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 10px;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        opacity: 0.8;
+        font-size: 18px
     }
 
     .top-nav-collapse {
@@ -27,25 +29,64 @@ html {
     }
 }
 
+.title {
+    font-size: 100px;
+}
+
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    font-size: 100px;
+    font-weight: ;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-image: url("../img/vegetables.jpg")
+    /*background: #fff;*/
+}
+@media(min-width:767px)  {
+    .intro-section {
+        font-size: 50px;
+    }
+}
+
+.background-section {
+    height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #eee; 
 }
 
 .about-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
+    background: #fff;
+}
+
+.data-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+
+.models-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
     background: #eee;
 }
 
-.services-section {
+
+.results-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
