@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,7 +28,7 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="document.body.style.opacity='1'">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -51,22 +51,22 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">about</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#background">Background</a>
+                        <a class="page-scroll" href="#background">background</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#data">Data</a>
+                        <a class="page-scroll" href="#data">data</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#models">Models</a>
+                        <a class="page-scroll" href="#models">models</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#results">Results</a>
+                        <a class="page-scroll" href="#results">results</a>
                     </li>  
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class = 'title'>YOU ARE WHAT YOU EAT</h1>
+                    <div class = 'title' id="title">
+                        <span class='title1'>YOU</span>
+                        <span class='title2'>ARE</span>
+                        <span class='title3'>WHAT</span>
+                    </div>
+                    <div class = 'title' id="title">
+                        <span class='title4'>YOU</span>
+                        <span class='title5'>EAT.</span>
+                    </div>
                     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
                 </div>
             </div>
@@ -88,7 +96,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="content about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -99,7 +107,7 @@
     </section>
 
     <!-- Background Section -->
-    <section id="background" class="background-section">
+    <section id="background" class="content background-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -110,7 +118,7 @@
     </section>
 
     <!-- Data Section -->
-    <section id="data" class="data-section">
+    <section id="data" class="content data-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -121,7 +129,7 @@
     </section>
 
     <!-- Models Section -->
-    <section id="models" class="models-section">
+    <section id="models" class="content models-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -132,7 +140,7 @@
     </section>
 
     <!-- Results Section -->
-    <section id="results" class="results-section">
+    <section id="results" class="content results-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -143,7 +151,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="content contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
