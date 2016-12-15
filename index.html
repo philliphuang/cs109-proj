@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,7 +55,7 @@
                         <a class="page-scroll" href="#about">about</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#background">background</a>
+                        <a class="page-scroll" href="#overview">overview</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#data">data</a>
@@ -67,6 +68,11 @@
                     </li>  
                     <li>
                         <a class="page-scroll" href="#contact">contact</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/philliphuang/cs109-proj">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -101,18 +107,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About</h1>
+                    <h1>about</h1>
+                    <p class="normal_text">This was the final project for Harvard University’s CS109a: Data Science course taught during the Fall 2016 semester. The team members include Christopher Chen, Joshua Felizardo, Phillip Huang, and Harry Xue. Steve Klosterman served as the advising teaching fellow for this project. 
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Background Section -->
-    <section id="background" class="content background-section">
+    <section id="overview" class="content overview-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Background</h1>
+                    <h1 class="section_title">overview</h1>
+                    <h2 class="subsection"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>     motivation</h2>
+                    <p class="normal_text">In recent years, the healthcare industry has become increasingly focused on a preventative model. Health and food are constantly discussed hand in hand, with numerous foods and diets being proclaimed as surefires ways to a healthy lifestyle. However, how should one determine which foods are linked with better health?</p>
+
+                    <h2 class="subsection"><i class="fa fa-globe" aria-hidden="true"></i>   a global approach </h2>
+                    <p class="normal_text">Individual humans make poor (and oftentimes unethical) experiment participants, since it is virtually impossible for an experimenter to control for all other variables besides one food product. Therefore, we decided to tackle the issue from a more global perspective, looking at national supplies of many different food types and relating them to national averages for risk of death from noncommunicable diseases such as cancer, diabetes, and heart disease, where better health comes with lower rates for both. We hope that using national average data will account for the variation in individual members of the population. </p>
+
+                    <h2 class="subsection"><i class="fa fa-calculator" aria-hidden="true"></i> statistical tools used</h2>
+                    <p class="normal_text">Because of the continuous nature of our predictors - the amounts of each food type in each country in various years - and the response variables - the risk of death measures - we can use linear regression and its extensions to identify whether specific food types or combinations of foods have a significant relationship, whether positive or negative, to risk of death.</p>
+
                 </div>
             </div>
         </div>
@@ -123,10 +140,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Data</h1>
+                    <h1>data</h1>
+                    <h2 class="subsection"><i class="fa fa-database" aria-hidden="true"></i> data sources</h2>
+                    <h3 class=""></h3>
+
                 </div>
             </div>
         </div>
+        <!-- <iframe src="Net.html" style="width:100%; min-height:100em"></iframe> -->
+
+        <!-- <div id="PCA" style="width:100%;height:100%"></div> -->
     </section>
 
     <!-- Models Section -->
@@ -134,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Models</h1>
+                    <h1>models</h1>
                 </div>
             </div>
         </div>
@@ -145,7 +168,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Results</h1>
+                    <h1>results</h1>
                 </div>
             </div>
         </div>
@@ -156,7 +179,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact</h1>
+                    <h1>contact</h1>
                 </div>
             </div>
         </div>
@@ -173,6 +196,16 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <!-- font awesome  -->
+    <script src="https://use.fontawesome.com/c5a1a325e9.js"></script>
+
+    <!-- plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/visualizations.js"></script>
+
+    <!-- w3 import html snippet -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
 
 </body>
 

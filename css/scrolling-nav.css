@@ -70,20 +70,34 @@ of those sections to manage the look and feel of the site. */
     }
 }
 
+.normal_text{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: left !important;
+}
+
+.section_title {
+    padding-bottom: 1em;
+}
+
+.subsection {
+    font-size: 25px;
+    text-align: left;
+}
 .content {
-    height: 100%;
-    padding-top: 3em;
+    /*height: 100%;*/
+    padding-top: 2em;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     background: #eee; 
 }
-
-.background-section {
-    background: #eee; 
-}
-
 .about-section {
     background: #fff;
+}
+
+.overview-section {
+    background: #eee; 
 }
 
 .data-section {
