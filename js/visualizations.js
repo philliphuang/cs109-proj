@@ -29,7 +29,7 @@ var trace1 = {
 
 var data = [trace1];
 var layout = {
-  title: 'PCA of Average Food Consumption by Country (1970-2000)',
+  // title: 'PCA of Average Food Consumption by Country (1970-2000)',
   margin: {
     l: 0,
     r: 0,
