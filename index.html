@@ -169,15 +169,35 @@
                     <p class="normal_text">Elimination of faulty variables is implemented in Notebook 7. During the course of this project, the FAO revised their website to include variable descriptions for each of the food items in the crop and livestock data. Inspecting these descriptions revealed to us that many of the food items overlapped and several were incorrectly defined. For example, both “Sugar, Raw Equivalent” and “Sugar (Raw Equivalent)” were included as food items in the FAO dataset, but they were defined differently in their descriptions, with each containing a different set of food subcategories.</p>
                     <p class="normal_text">Clearly, using these food items will completely confounded our results for our statistical models. So, we manually checked and eliminated all the variables that were redundant, incorrectly defined, or completely ambiguous in content. We found Metadata on the dataset through the FAO website. We analyzed what subcategories that each variable contained, and manually dropped the variables whose subcategories overlapped with those of other variables. This helped reduce the multicollinearity and increase the accuracy and interpretability of the final model.</p>
                     <h2 class="subsection"><i class="fa fa-search" aria-hidden="true"></i> Data Analysis and Visualization</h2>
-
+                    <p class="normal_text">Visualization code can be found in Notebook 4. Correlation analysis can be found in Notebook 5. PCA analysis can be found in Notebook 15.</p>
+                   
+                    <h3 class="ssubsection">Exploratory Visualization with Interactive Choropleths</h3>
                     <p class="normal_text"> With such a large number of predictors and global data, it can be somewhat challenging to get a sense of the full picture through standard visualizations like simple bar graphs. Therefore, we created interactive choropleth visualizations using <a href="https://plot.ly/">Plotly</a> which heatmap food consumption as well as health data. The full interactive choropleths can be run offline by downloading and running Notebook 4.</p>
+                    
+
 
                     <h3 class="ssubsection">Correlation Analysis</h3>
                     <p class="normal_text">In our correlation analysis we already identified some of the potential categorization issues that we addressed in our extensive data cleaning section, as overlapping categories tended to have high correlation with each other. When comparing with the noncommunicable disease measures, none of the features appeared to be highly correlated with them, which was an encouraging sign to begin the model fitting and analysis once cleaning was complete.</p>
+
+                    <h2 class="subsection">Further Exploratory Visualization</h3>
+
+                    <h3 class="ssubsection">Nearest Neighbors</h3>
+                    <p class="normal_text">Inspired by the k-nearest neighbors (KNN) algorithm covered in class, we decided to visualize the similarity of countries’ diets by a nearest neighbors approach. Using by-country average food consumption data from 1970-2000, we calculated the Euclidean distance between every pair of countries using each food item as a feature. Then we created a network graph with countries represented by nodes, edges drawn between countries if they were among the 3 nearest neighbors to one another and the length of the edges representing the Euclidean distance between linked countries in terms of food consumption habits. An interactive force-graph visualization of this can be found below:</p>
+
+                    <iframe src="Net.html" style="width:100%; min-height:100em"></iframe>
+                    <p class="normal_text">We see that for the most part there are some geographical correlations in that countries near one another in graph proximity (and hence with similar diets) are geographically close in the real world but there are some interesting outliers as well.</p>
+
+                    <h3 class="ssubsection">PCA</h3>
+                    <p class="normal_text">We used PCA as another way of visualizing diet similarities between countries. PCA is commonly used to convert data with a large number of possibly correlated features into a set of orthogonal variables called principal components. Each principal component captures the largest possible variance possible. PCA was a natural fit for our data especially given the large number of food categories that we were dealing with. </p>
+                    <img style="width:70%; height:70%" src="img/pca/pca2d.png">
+                    <p class="normal_text">We visualized projections of the data onto the first 2 and first 3 principal components: The former can be viewed below:</p>
+                    <div id="PCA" style="width:100%;height:100%"></div>
                 </div>
+
+
             </div>
         </div>
-        <!-- <iframe src="Net.html" style="width:100%; min-height:100em"></iframe> -->
+        
 
         <!-- <div id="PCA" style="width:100%;height:100%"></div> -->
     </section>
@@ -188,6 +208,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>models</h1>
+                    <h2 class="subsection"><i class="fa fa-check" aria-hidden="true"></i> Scoring</h2>
+                    <p class="normal_text">The linear regression model can be found in Notebook 8.
+                    As a preliminary method, Multiple Linear Regression made a lot of sense considering the continuous nature of our features (different food categories measured in grams/capita/day) and our responses (measured in percent and mortality rates). One of the method’s main advantages is that we could determine the most important features, as well as their predicted effect on the different diseases measures, relatively easily. We fit multiple linear regression models with the food data as the independent variables and the different disease datasets as the dependent variables. In terms of prediction accuracy these models performed reasonably well, although there were some potential issues that we noticed after fitting these models.</p>
+
                     <h2 class="subsection"><i class="fa fa-line-chart" aria-hidden="true"></i> Least-squares Linear Regresssion</h2>
                     <p class="normal_text">The linear regression model can be found in Notebook 8.
                     As a preliminary method, Multiple Linear Regression made a lot of sense considering the continuous nature of our features (different food categories measured in grams/capita/day) and our responses (measured in percent and mortality rates). One of the method’s main advantages is that we could determine the most important features, as well as their predicted effect on the different diseases measures, relatively easily. We fit multiple linear regression models with the food data as the independent variables and the different disease datasets as the dependent variables. In terms of prediction accuracy these models performed reasonably well, although there were some potential issues that we noticed after fitting these models.</p>
