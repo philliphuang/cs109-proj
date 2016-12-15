@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>about</h1>
-                    <p class="normal_text">This was the final project for Harvard University’s CS109a: Data Science course taught during the Fall 2016 semester. The team members include Christopher Chen, Joshua Felizardo, Phillip Huang, and Harry Xue. We would like to thank Steve Klosterman for his guidance as the advising teaching fellow for this project. 
+                    <p class="normal_text">This was the final project for Harvard University’s CS109a: Data Science course taught during the Fall 2016 semaester. The team members include Christopher Chen, Joshua Felizardo, Phillip Huang, and Harry Xue. We would like to thank Steve Klosterman for his guidance as the advising teaching fellow for this project. 
                     </p>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                 <div class="col-lg-12">
                     <h1 class="section_title">overview</h1>
                     <h2 class="subsection"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>  Motivation</h2>
-                    <p class="normal_text">In recent years, the healthcare industry has become increasingly focused on a preventative model. Health and food are constantly discussed hand in hand, with numerous foods and diets being proclaimed as surefires ways to a healthy lifestyle. However, how should one determine which foods are linked with better health?</p>
+                    <p class="normal_text">In recent years, the healthcare industry has become increasingly focused on a preventative model. Health and food are constantly discussed hand in hand, with numerous foods and diets being proclaimed as surefire ways to a healthy lifestyle. However, how should one determine which foods are linked with better health?</p>
 
                     <h2 class="subsection"><i class="fa fa-globe" aria-hidden="true"></i>   Global Approach</h2>
                     <p class="normal_text">Individual humans make poor (and oftentimes unethical) experiment participants, since it is virtually impossible for an experimenter to control for all other variables besides one food product. Therefore, we decided to tackle the issue from a more global perspective, looking at national supplies of many different food types and relating them to national averages for risk of death from noncommunicable diseases such as cancer, diabetes, and heart disease, where better health comes with lower rates for both. We hope that using national average data will account for the variation in individual members of the population. </p>
@@ -189,14 +189,14 @@
                     <h3 class="ssubsection">Nearest Neighbors</h3>
                     <p class="normal_text">Inspired by the k-nearest neighbors (KNN) algorithm covered in class, we decided to visualize the similarity of countries’ diets by a nearest neighbors approach. Using by-country average food consumption data from 1970-2000, we calculated the Euclidean distance between every pair of countries using each food item as a feature. Then we created a network graph with countries represented by nodes, edges drawn between countries if they were among the 3 nearest neighbors to one another and the length of the edges representing the Euclidean distance between linked countries in terms of food consumption habits. An interactive force-graph visualization of this can be found below:</p>
 
-                    <iframe src="Net.html" style="width:100%; min-height:100em"></iframe>
+                    <iframe src="Net.html" style="width:100%; min-height: 75em"></iframe>
                     <p class="normal_text">We see that for the most part there are some geographical correlations in that countries near one another in graph proximity (and hence with similar diets) are geographically close in the real world but there are some interesting outliers as well.</p>
 
                     <h3 class="ssubsection">PCA</h3>
                     <p class="normal_text">We used PCA as another way of visualizing diet similarities between countries. PCA is commonly used to convert data with a large number of possibly correlated features into a set of orthogonal variables called principal components. Each principal component captures the largest possible variance possible. PCA was a natural fit for our data especially given the large number of food categories that we were dealing with. </p>
                     <img style="width:70%; height:70%" src="img/pca/pca2d.png">
-                    <p class="normal_text">We visualized projections of the data onto the first 2 and first 3 principal components: An interactive visualization of the latter can be viewed below:</p>
-                    <div id="PCA" style="width:100%;height:100%"></div>
+                    <p class="normal_text">We visualized projections of the data onto the first 2 and first 3 principal components: An interactive visualization of the latter can be viewed below (<i>try clicking, dragging, and zooming</i>):</p>
+                    <div id="PCA" style="width:100%; min-height:75em; padding-bottom: 2em"></div>
                     <p class="normal_text">PCA components are not always easily interpretable depending on the application. However, in our case there does happen to be an intuitive interpretation. Since each PCA component is a linear combination of the original features, then in this case each component can be interpreted as a particular "diet". Therefore we looked at the “diet” associated with each of the first 3 components, filtering out only loadings with values greater than 0.1 in absolute value for readability.</p>
                     <div class="pca"><img src="img/pca/pca1.png"></div>
                     <div class="pca"><img src="img/pca/pca2.png"></div>
@@ -276,7 +276,7 @@
                     <h2 class="subsection" style="text-align: center">Respiratory Deaths per 100k People</h2>
                     <img src="img/lasso/lasso_resp.png">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="padding-bottom: 5em">
                     <h2 class="subsection" style="text-align: center">Risk of Death at Age 30</h2>
                     <img src="img/lasso/lasso_risk.png">
                 </div>
@@ -284,8 +284,12 @@
                 <p class="normal_text">For our final models, because of their high predictive accuracy and despite the potential concerns about their assumptions, we decided to use the Lasso Regression models. When identifying the significant food categories, we decided to use a significance threshold of 0.1 instead of the standard 0.05 so we could potentially visualize more important features. Especially with Lasso, at a significance level of 0.05 we had very few predictors that were deemed significant in the model, so using 0.1 as the threshold instead allowed us to identify more important categories, while still using a relatively robust approach.</p>
                 <p class="normal_text">To visualize the predicted effects of these important food categories, we decided to use bar graphs with each food category along the x-axis and their respective coefficient values along the y-axis. One important thing to note is that the graphs can be counterintuitive: because the responses were measures of percent risk and mortality rate, a category with a positive coefficient value is associated with higher risk and mortality rate and thus could be considered an “unhealthy” food, while those with negative coefficient values are associated with lower risk and mortality rate and thus would be preferred for better health. </p>
                 <p class="normal_text">Many of the results here are unsurprising to a layperson’s interpretation of nutrition. Various meats, like mutton or meat from horses, rabbits, camels, and other miscellaneous animals (represented by the Meats, other category) are strong predictors of cancer deaths. This is consistent with the <a href="http://www.aicr.org/reduce-your-cancer-risk/recommendations-for-cancer-prevention/recommendations_05_red_meat.html">scientific consensus</a> that red meats may increase cancer risk. Diabetes is predicted by consumption of carbohydrates like sugar and starches, which is consistent with the intuitive expectation that foods that impact blood sugar will have a strong effect. Several oils predict deaths by cardiovascular disease. One may hypothesize that this might be due to the high fat content. </p>
-                <p class="normal_text">Some of the results are not as intuitive. Pulses apparently predict respiratory disease, while oranges are strong protectants against cardiovascular disease. There may exist biological explanations of these effects, but it is difficult to discern them from errors in the data or statistical noise from the information we have here.</p>
-                <!-- <img src=""></img> -->
+                <p class="normal_text">Some of the results are not as intuitive. Pulses apparently predict respiratory disease, while oranges are strong protectants against cardiovascular disease. There may exist biological explanations of these effects, but it is difficult to definitively discern them from errors in the data or statistical noise from the information we have here.</p>
+
+                <h2 class="subsection">Other Factors and Extensions</h2>
+                <p class="normal_text">While the main focus of our project was identifying which food categories had significant effects on risk of death or mortality rate from noncommunicable diseases, we also explored the potential effects of other factors on the unexplained variance from our final Lasso models. To determine whether there was a significant relationship, we performed Simple Linear Regression with national exercise data as well as the number of doctors and available hospital beds per 1000 people per country as features and the residuals from those Lasso models as responses. However, we did not reach any significant conclusions from those follow-up models, partly because of the sparsity of our feature values and their inconsistent units when compared to the food and disease data. Still these factors are by no means insignificant and should be explored further in follow-up work.</p>
+
+                <p class="normal_text">As we saw in some of our data visualizations, development levels of countries could potentially be another important factor to consider when predicting noncommunicable disease risk and mortality, perhaps through GDP or other measures. Moreover, for many of these noncommunicable diseases there could certainly be genetic factors that could also be potentially be tied to country or region. If genetic markers significantly associated with each disease could be identified and measured in each country, then that would certainly be another factor to take into account as well.</p>
             </div>
         </div>
     </section>
