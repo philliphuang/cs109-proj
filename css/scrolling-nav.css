@@ -7,6 +7,9 @@
 body {
     width: 100%;
     height: 100%;
+    opacity:0;
+    /*transition: opacity 2s;
+    -webkit-transition: opacity 2s;*/
 }
 
 html {
@@ -16,12 +19,14 @@ html {
 
 @media(min-width:767px) {
     .navbar {
+        font-family: 'Raleway', sans-serif;
         padding: 10px;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         opacity: 0.8;
-        font-size: 18px
+        font-size: 18px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
     .top-nav-collapse {
@@ -39,63 +44,62 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
+    max-height: 600px;
     height: 100%;
-    padding-top: 200px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 150px;
     padding-bottom: 40px;
     font-size: 100px;
-    font-weight: ;
+    font-weight: bold;
     text-align: center;
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     background-size: cover;
-    background-image: url("../img/vegetables.jpg")
-    /*background: #fff;*/
+    background-image: url("../img/vegetables2.png")
 }
-@media(min-width:767px)  {
+
+.subtitle {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 70px
+}
+@media(min-width:1000px)  {
     .intro-section {
-        font-size: 50px;
+        font-size: 50px !important;
     }
 }
 
-.background-section {
+.content {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 3em;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background: #eee; 
+}
+
+.background-section {
     background: #eee; 
 }
 
 .about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
     background: #fff;
 }
 
 .data-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
     background: #fff;
 }
 
 
 .models-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
     background: #eee;
 }
 
 
 .results-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
     background: #fff;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
     background: #eee;
 }
