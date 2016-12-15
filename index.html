@@ -168,11 +168,16 @@
                     <h3 class="ssubsection">Elimination of Faulty Variables</h3>
                     <p class="normal_text">Elimination of faulty variables is implemented in Notebook 7. During the course of this project, the FAO revised their website to include variable descriptions for each of the food items in the crop and livestock data. Inspecting these descriptions revealed to us that many of the food items overlapped and several were incorrectly defined. For example, both “Sugar, Raw Equivalent” and “Sugar (Raw Equivalent)” were included as food items in the FAO dataset, but they were defined differently in their descriptions, with each containing a different set of food subcategories.</p>
                     <p class="normal_text">Clearly, using these food items will completely confounded our results for our statistical models. So, we manually checked and eliminated all the variables that were redundant, incorrectly defined, or completely ambiguous in content. We found Metadata on the dataset through the FAO website. We analyzed what subcategories that each variable contained, and manually dropped the variables whose subcategories overlapped with those of other variables. This helped reduce the multicollinearity and increase the accuracy and interpretability of the final model.</p>
+
+                    <p class="normal_text">Cleaning of healthcare data can be found in Notebook 13.</p>
+
                     <h2 class="subsection"><i class="fa fa-search" aria-hidden="true"></i> Data Analysis and Visualization</h2>
                     <p class="normal_text">Visualization code can be found in Notebook 4. Correlation analysis can be found in Notebook 5. PCA analysis can be found in Notebook 15.</p>
                    
                     <h3 class="ssubsection">Exploratory Visualization with Interactive Choropleths</h3>
                     <p class="normal_text"> With such a large number of predictors and global data, it can be somewhat challenging to get a sense of the full picture through standard visualizations like simple bar graphs. Therefore, we created interactive choropleth visualizations using <a href="https://plot.ly/">Plotly</a> which heatmap food consumption as well as health data. The full interactive choropleths can be run offline by downloading and running Notebook 4.</p>
+
+                    <img src="img/deaths_per_100k.png" style="width:80%">
                     
 
 
@@ -190,8 +195,16 @@
                     <h3 class="ssubsection">PCA</h3>
                     <p class="normal_text">We used PCA as another way of visualizing diet similarities between countries. PCA is commonly used to convert data with a large number of possibly correlated features into a set of orthogonal variables called principal components. Each principal component captures the largest possible variance possible. PCA was a natural fit for our data especially given the large number of food categories that we were dealing with. </p>
                     <img style="width:70%; height:70%" src="img/pca/pca2d.png">
-                    <p class="normal_text">We visualized projections of the data onto the first 2 and first 3 principal components: The former can be viewed below:</p>
+                    <p class="normal_text">We visualized projections of the data onto the first 2 and first 3 principal components: An interactive visualization of the latter can be viewed below:</p>
                     <div id="PCA" style="width:100%;height:100%"></div>
+                    <p class="normal_text">PCA components are not always easily interpretable depending on the application. However, in our case there does happen to be an intuitive interpretation. Since each PCA component is a linear combination of the original features, then in this case each component can be interpreted as a particular "diet". Therefore we looked at the “diet” associated with each of the first 3 components, filtering out only loadings with values greater than 0.1 in absolute value for readability.</p>
+                    <div class="pca"><img src="img/pca/pca1.png"></div>
+                    <div class="pca"><img src="img/pca/pca2.png"></div>
+                    <div class="pca"><img src="img/pca/pca3.png"></div>
+
+                    <p class="normal_text">The loadings seem to support the hypothesis that the first component is associated with how developed a country is. Looking at the loadings for the first component we see that foods such as sugar, cocoa (probably a proxy for chocolate products), beer and meats are associated with more developed countries while staples such as rice and pulses (legumes) are associated with the less developed countries on the right of the 2d projection graph.</p>
+                    <p class="normal_text">The other two components are not as easily interpretable, though the first component is nonetheless very interesting indeed.</p>
+
                 </div>
 
 
@@ -209,8 +222,7 @@
                 <div class="col-lg-12">
                     <h1>models</h1>
                     <h2 class="subsection"><i class="fa fa-check" aria-hidden="true"></i> Scoring</h2>
-                    <p class="normal_text">The linear regression model can be found in Notebook 8.
-                    As a preliminary method, Multiple Linear Regression made a lot of sense considering the continuous nature of our features (different food categories measured in grams/capita/day) and our responses (measured in percent and mortality rates). One of the method’s main advantages is that we could determine the most important features, as well as their predicted effect on the different diseases measures, relatively easily. We fit multiple linear regression models with the food data as the independent variables and the different disease datasets as the dependent variables. In terms of prediction accuracy these models performed reasonably well, although there were some potential issues that we noticed after fitting these models.</p>
+                    <p class="normal_text">While we used Leave One Out cross validation to identify the best hyperparameters for the more advanced models (i.e. Lasso, Random Forests), we also utilized the food data from 2000-2012 as well as the noncommunicable disease data from 2012 to calculate predictive accuracy on our models, comparing their predictions on the 2000-2012 food data to the actual 2012 disease data using R^2. With R^2 values for each model we then could compare the predictive accuracy of each of the approaches to identify which one we would use for the final model.</p>
 
                     <h2 class="subsection"><i class="fa fa-line-chart" aria-hidden="true"></i> Least-squares Linear Regresssion</h2>
                     <p class="normal_text">The linear regression model can be found in Notebook 8.
@@ -236,8 +248,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>results</h1>
+                    <h1>results and conclusion</h1>
                 </div>
+                <h2 class="subsection">Results</h2>
                 <div class="col-md-6">
                     <h2 class="subsection" style="text-align: center">Deaths per 100k People</h2>
                     <img src="img/lasso/lasso_100k.png">
@@ -267,6 +280,11 @@
                     <h2 class="subsection" style="text-align: center">Risk of Death at Age 30</h2>
                     <img src="img/lasso/lasso_risk.png">
                 </div>
+                <h2 class="subsection">Conclusions</h2>
+                <p class="normal_text">For our final models, because of their high predictive accuracy and despite the potential concerns about their assumptions, we decided to use the Lasso Regression models. When identifying the significant food categories, we decided to use a significance threshold of 0.1 instead of the standard 0.05 so we could potentially visualize more important features. Especially with Lasso, at a significance level of 0.05 we had very few predictors that were deemed significant in the model, so using 0.1 as the threshold instead allowed us to identify more important categories, while still using a relatively robust approach.</p>
+                <p class="normal_text">To visualize the predicted effects of these important food categories, we decided to use bar graphs with each food category along the x-axis and their respective coefficient values along the y-axis. One important thing to note is that the graphs can be counterintuitive: because the responses were measures of percent risk and mortality rate, a category with a positive coefficient value is associated with higher risk and mortality rate and thus could be considered an “unhealthy” food, while those with negative coefficient values are associated with lower risk and mortality rate and thus would be preferred for better health. </p>
+                <p class="normal_text">Many of the results here are unsurprising to a layperson’s interpretation of nutrition. Various meats, like mutton or meat from horses, rabbits, camels, and other miscellaneous animals (represented by the Meats, other category) are strong predictors of cancer deaths. This is consistent with the <a href="http://www.aicr.org/reduce-your-cancer-risk/recommendations-for-cancer-prevention/recommendations_05_red_meat.html">scientific consensus</a> that red meats may increase cancer risk. Diabetes is predicted by consumption of carbohydrates like sugar and starches, which is consistent with the intuitive expectation that foods that impact blood sugar will have a strong effect. Several oils predict deaths by cardiovascular disease. One may hypothesize that this might be due to the high fat content. </p>
+                <p class="normal_text">Some of the results are not as intuitive. Pulses apparently predict respiratory disease, while oranges are strong protectants against cardiovascular disease. There may exist biological explanations of these effects, but it is difficult to discern them from errors in the data or statistical noise from the information we have here.</p>
                 <!-- <img src=""></img> -->
             </div>
         </div>

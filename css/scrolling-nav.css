@@ -101,6 +101,11 @@ of those sections to manage the look and feel of the site. */
     font-family: 'Raleway', sans-serif;
     background: #eee; 
 }
+
+.pca {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .about-section {
     background: #fff;
 }
