@@ -24,7 +24,7 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-        opacity: 0.8;
+        opacity: 0.9;
         font-size: 18px;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
@@ -71,22 +71,31 @@ of those sections to manage the look and feel of the site. */
 }
 
 .normal_text{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     text-align: left !important;
 }
 
 .section_title {
     padding-bottom: 1em;
+    font-size: 35px;
 }
 
 .subsection {
     font-size: 25px;
+    padding-top: 30px;
     text-align: left;
 }
+
+.ssubsection {
+    text-align: left;
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
 .content {
-    /*height: 100%;*/
     padding-top: 2em;
     text-align: center;
     font-family: 'Raleway', sans-serif;

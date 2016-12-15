@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>about</h1>
-                    <p class="normal_text">This was the final project for Harvard University’s CS109a: Data Science course taught during the Fall 2016 semester. The team members include Christopher Chen, Joshua Felizardo, Phillip Huang, and Harry Xue. Steve Klosterman served as the advising teaching fellow for this project. 
+                    <p class="normal_text">This was the final project for Harvard University’s CS109a: Data Science course taught during the Fall 2016 semester. The team members include Christopher Chen, Joshua Felizardo, Phillip Huang, and Harry Xue. We would like to thank Steve Klosterman for his guidance as the advising teaching fellow for this project. 
                     </p>
                 </div>
             </div>
@@ -121,13 +121,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="section_title">overview</h1>
-                    <h2 class="subsection"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>     motivation</h2>
+                    <h2 class="subsection"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>  Motivation</h2>
                     <p class="normal_text">In recent years, the healthcare industry has become increasingly focused on a preventative model. Health and food are constantly discussed hand in hand, with numerous foods and diets being proclaimed as surefires ways to a healthy lifestyle. However, how should one determine which foods are linked with better health?</p>
 
-                    <h2 class="subsection"><i class="fa fa-globe" aria-hidden="true"></i>   a global approach </h2>
+                    <h2 class="subsection"><i class="fa fa-globe" aria-hidden="true"></i>   Global Approach</h2>
                     <p class="normal_text">Individual humans make poor (and oftentimes unethical) experiment participants, since it is virtually impossible for an experimenter to control for all other variables besides one food product. Therefore, we decided to tackle the issue from a more global perspective, looking at national supplies of many different food types and relating them to national averages for risk of death from noncommunicable diseases such as cancer, diabetes, and heart disease, where better health comes with lower rates for both. We hope that using national average data will account for the variation in individual members of the population. </p>
 
-                    <h2 class="subsection"><i class="fa fa-calculator" aria-hidden="true"></i> statistical tools used</h2>
+                    <h2 class="subsection"><i class="fa fa-calculator" aria-hidden="true"></i> Statistical Tools</h2>
                     <p class="normal_text">Because of the continuous nature of our predictors - the amounts of each food type in each country in various years - and the response variables - the risk of death measures - we can use linear regression and its extensions to identify whether specific food types or combinations of foods have a significant relationship, whether positive or negative, to risk of death.</p>
 
                 </div>
@@ -141,8 +141,27 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>data</h1>
-                    <h2 class="subsection"><i class="fa fa-database" aria-hidden="true"></i> data sources</h2>
-                    <h3 class=""></h3>
+                    <h2 class="subsection"><i class="fa fa-database" aria-hidden="true"></i> Data Sources</h2>
+                    <h3 class="ssubsection">Food</h3>
+                    <p class="normal_text">For the different food categories, we utilized two datasets from the Food and Agriculture Organization of the United Nations (FAO), which contained crops and livestock raised primarily for human consumption, respectively. While different units were provided, we focused on amounts measured in grams per capita per day for different countries from 1961-2013 for simplicity and comparability. While some countries without reported data were given estimated figures, there was a significant amount of missing data from both datasets.</p>
+                    <h3 class="ssubsection">Disease</h3>
+                    <p class="normal_text">For the risk of death from noncommunicable diseases, we used a dataset from the World Health Organization (WHO), which measured risk of death with two different measures, calculated in 2000 and 2012. One was an age-standardized mortality rate, computed by weighting mortality rates for different age groups to the standard WHO population, per 100,000 people. They also calculated the percentage of 30 year old individuals who would die before reaching 70 years of age because of a non-communicable disease. While estimates were also provided for countries without data, there was still some presence of missing data.</p>
+                    <h3 class="ssubsection">Healthcare and Exercise</h3>
+                    <p class="normal_text">We also wanted to take into account other potential factors that may affect health. We focused on assessing the impact of exercise and the quality of healthcare in each country. As a proxy for healthcare quality, we drew data documenting the number of physicians per 1000 people in each country from the WHO’s Global Health Workforce Statistics, the Organisation for Economic Co-operation and Development (OECD). We also obtained data about the number of hospital beds per 1000 people in each country from the same source. For exercise, we analyzed the WHO’s dataset on the percentage of individuals with insufficient physical activity for each country. The WHO defines insufficient physical activity as less than 150 minutes of moderate physical activity or less than 75 minutes of vigorous physical activity.</p>
+
+
+                    <h2 class="subsection"><i class="fa fa-shower" aria-hidden="true"></i> Data Cleaning</h2>
+                    <h3 class="ssubsection">General Cleaning</h3>
+                    <p class="normal_text">General cleaning is performed in Notebook 1. Some datasets were provided in multiple versions. The cleanest version that contained all relevant values was selected for the project. Each dataset was read into a pandas DataFrame, and redundant, inconsistent, and invalid values were stripped out. Each dataset was then compressed to contain only the values relevant to the guiding questions of the project. This included omitting gender-specific data, country codes, and food item codes. It also included grouping data by item id, in order, for example, to have a single item per column and a single country per row for the food data. Grams per capita per day was selected as the main unit of measuring food consumption as it was calculated on per capita basis, which is relevant to the impact on an individual's health. 
+                    One particularly difficult problem we countered was that the country names were inconsistent across several of the datasets. For example, certain datasets encoded China as “China, People’s Republic of” while other datasets encoded it as “China, mainland.” To resolve these inconsistencies, we manually edited all dataset country names to match the country names in our dependent variable, the disease data. Countries not appearing in the disease data were omitted.   </p>
+                    <h3 class="ssubsection">Imputation of Missing Values</h3>
+                    <p class="normal_text">The imputation of missing values is performed in Notebook 2 and Notebook 3. 
+                    Most datasets in this project, with the exception of the disease data, had a high prevalence of missing data. This is likely due to difficulty collecting information in certain countries. Several methods were attempted to handle these missing values. We first focus on the food data, as it the main information upon which we base our analyses. Dropping countries with many missing variables was attempted, but eliminated so many countries that statistical analysis was rendered infeasible. Next, dropping variables that had many missing countries was attempted, but similar problems occurred. A combination of dropping variables and countries was attempted by exploring how many countries with scarce data remained when sparse variables were dropped, and vice versa. The relationship between these two actions was explored and the quantities were plotted. In the end, we abandoned this method of imputation because too many years and countries would be dropped at each point.</p>
+                    <p class="normal_text">We eventually settled on a method of imputing the missing data that is described as follows: average the food values over a thirty year period (30 years was chosen because one of the disease variables represented the risk of NCD at age 30) for every country for every food item. This eliminated year as a variable in the dataset. This is reasonable because year-to-year changes in food consumption unlikely have an effect on overall health. We still preserve the between-country differences in consumption. By averaging, we can “smooth over” the missing values for any given country for a given food item. As long as a few values exist for a few years and the consumption levels remain relatively stable over time, the years with missing data will not majorly impact the average value. Additional filled in years will only increase the accuracy of the average value over 30 years. After averaging, any remaining countries and food items with over 50% missing values were dropped. The remaining missing values were imputed with the global mean (averaging over all countries) for that value. We selected the global mean to impute because it has a very minimal impact on the results of the analysis. The global mean is conservative in its bias because imputing by any other value would skew the overall distribution of the values across countries higher or lower. Imputing by the global mean will only decrease the variance of the distribution, and thus will only make the effect of any given food item on health appear weaker.</p>
+
+                    <h3 class="ssubsection">Elimination of Faulty Variables</h3>
+                    <p class="normal_text">Elimination of faulty variables is implemented in Notebook 7. During the course of this project, the FAO revised their website to include variable descriptions for each of the food items in the crop and livestock data. Inspecting these descriptions revealed to us that many of the food items overlapped and several were incorrectly defined. For example, both “Sugar, Raw Equivalent” and “Sugar (Raw Equivalent)” were included as food items in the FAO dataset, but they were defined differently in their descriptions, with each containing a different set of food subcategories.</p>
+                     <p class="normal_text">Clearly, using these food items will completely confounded our results for our statistical models. So, we manually checked and eliminated all the variables that were redundant, incorrectly defined, or completely ambiguous in content. We found Metadata on the dataset through the FAO website. We analyzed what subcategories that each variable contained, and manually dropped the variables whose subcategories overlapped with those of other variables. This helped reduce the multicollinearity and increase the accuracy and interpretability of the final model.</p>
 
                 </div>
             </div>
@@ -158,6 +177,23 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>models</h1>
+                    <h2 class="subsection"><i class="fa fa-line-chart" aria-hidden="true"></i> Least-squares Linear Regresssion</h2>
+                    <p class="normal_text">The linear regression model can be found in Notebook 8.
+                    As a preliminary method, Multiple Linear Regression made a lot of sense considering the continuous nature of our features (different food categories measured in grams/capita/day) and our responses (measured in percent and mortality rates). One of the method’s main advantages is that we could determine the most important features, as well as their predicted effect on the different diseases measures, relatively easily. We fit multiple linear regression models with the food data as the independent variables and the different disease datasets as the dependent variables. In terms of prediction accuracy these models performed reasonably well, although there were some potential issues that we noticed after fitting these models.</p>
+
+                    <h2 class="subsection"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Lasso Regression</h2>
+                    <p class="normal_text">The lasso regression model can be found in Notebook 9. One of the main issues that we noticed in our analysis of our initial models is the high-dimensionality of our features (relative to our observations) as well as the potential presence of multicollinearity, even after we performed cleaning on the food data. Our main strategy to address was variable selection in the form of Lasso Regression. Because it shrinks the coefficients to 0, it allows us to reduce the number of features while also still giving interpretable results. Moreover, in terms of prediction accuracy these models outperformed all the others, leading us to choose this approach to fit our final models.</p>
+
+                    <h2 class="subsection"><i class="fa fa-exchange" aria-hidden="true"></i> Linear and Lasso with Log Transformations</h2>
+                    <p class="normal_text">The models with log transformations can be found in Notebook 10. For the different food categories, we utilized two datasets from the Food and Agriculture Organization of the United Nations (FAO), which contained crops and livestock raised primarily for human consumption, respectively. While different units were provided, we focused on amounts measured in grams per capita per day for different countries from 1961-2013 for simplicity and comparability. While some countries without reported data were given estimated figures, there was a significant amount of missing data from both datasets.</p>
+
+
+                    <h2 class="subsection"><i class="fa fa-tree" aria-hidden="true"></i> Trees and Random Forests</h2>
+                    <p class="normal_text">The tree and random forest models can be found in Notebook 11. For the different food categories, we utilized two datasets from the Food and Agriculture Organization of the United Nations (FAO), which contained crops and livestock raised primarily for human consumption, respectively. While different units were provided, we focused on amounts measured in grams per capita per day for different countries from 1961-2013 for simplicity and comparability. While some countries without reported data were given estimated figures, there was a significant amount of missing data from both datasets.</p>
+
+
+
+                    
                 </div>
             </div>
         </div>
