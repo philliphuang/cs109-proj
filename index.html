@@ -198,9 +198,12 @@
                     <p class="normal_text">We visualized projections of the data onto the first 2 and first 3 principal components: An interactive visualization of the latter can be viewed below (<i>try clicking, dragging, and zooming</i>):</p>
                     <div id="PCA" style="width:100%; min-height:75em; padding-bottom: 2em"></div>
                     <p class="normal_text">PCA components are not always easily interpretable depending on the application. However, in our case there does happen to be an intuitive interpretation. Since each PCA component is a linear combination of the original features, then in this case each component can be interpreted as a particular "diet". Therefore we looked at the “diet” associated with each of the first 3 components, filtering out only loadings with values greater than 0.1 in absolute value for readability.</p>
-                    <div class="pca"><img src="img/pca/pca1.png"></div>
-                    <div class="pca"><img src="img/pca/pca2.png"></div>
-                    <div class="pca"><img src="img/pca/pca3.png"></div>
+
+                    <div class="row">
+                        <div class="col-md-4"><img src="img/pca/pca1.png" style="width:100%;"></div>
+                        <div class="col-md-4"><img src="img/pca/pca2.png" style="width:100%;"></div>
+                        <div class="col-md-4"><img src="img/pca/pca3.png" style="width:100%;"></div>
+                    </div>
 
                     <p class="normal_text">The loadings seem to support the hypothesis that the first component is associated with how developed a country is. Looking at the loadings for the first component we see that foods such as sugar, cocoa (probably a proxy for chocolate products), beer and meats are associated with more developed countries while staples such as rice and pulses (legumes) are associated with the less developed countries on the right of the 2d projection graph.</p>
                     <p class="normal_text">The other two components are not as easily interpretable, though the first component is nonetheless very interesting indeed.</p>
@@ -294,19 +297,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>contact</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -320,7 +310,7 @@
     <script src="https://use.fontawesome.com/c5a1a325e9.js"></script>
 
     <!-- plotly -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/plotly-latest.min.js"></script>
     <script src="js/visualizations.js"></script>
 
     <!-- w3 import html snippet -->
